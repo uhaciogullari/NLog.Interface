@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>NLog.Interface</id>
-    <version>0.1.2</version>
+    <version>0.2.2</version>
     <authors>Ufuk Hacıoğulları</authors>
     <owners>Ufuk Hacıoğulları</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,7 +12,7 @@
       Contains an interface extracted from NLog.Logger class. It can be used to replace with mocks in unit tests. Implementation class is called LoggerAdapter.
     </summary>
     <dependencies>
-      <dependency id="NLog" version="2.0.0.2000"/>
+      <dependency id="NLog" version="[2.0.0.2000]"/>
     </dependencies>
   </metadata>
   <files>
