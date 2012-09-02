@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.Interface", "NLog.Interface.csproj", "{59164367-B3E7-4738-B642-5182932A32BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.Interface", "NLog.Interface\NLog.Interface.csproj", "{59164367-B3E7-4738-B642-5182932A32BD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet Package", "NuGet Package", "{A4681EA6-E8A4-4BDC-82E2-05DF49A244F2}"
 	ProjectSection(SolutionItems) = preProject
-		..\NLog.Interface.nuspec = ..\NLog.Interface.nuspec
+		NLog.Interface.nuspec = NLog.Interface.nuspec
 	EndProjectSection
 EndProject
 Global
