@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>NLog.Interface</id>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
     <authors>Ufuk Hacıoğulları</authors>
     <owners>Ufuk Hacıoğulları</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Defines an abstraction for Logger public interface.</description>
-    <projectUrl>https://github.com/ufukh/NLog.Interface</projectUrl>
+    <projectUrl>https://github.com/uhaciogullari/NLog.Interface</projectUrl>
     <summary>
       Contains an interface extracted from NLog.Logger class. It can be used to replace with mocks in unit tests. Implementation class is called LoggerAdapter.
     </summary>
