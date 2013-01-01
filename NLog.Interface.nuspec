@@ -2,9 +2,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>NLog.Interface</id>
-    <version>0.2.3</version>
+    <version>1.0.0</version>
     <authors>Ufuk Hacıoğulları</authors>
     <owners>Ufuk Hacıoğulları</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Defines an abstraction for Logger public interface.</description>
     <projectUrl>https://github.com/uhaciogullari/NLog.Interface</projectUrl>
