@@ -7,4 +7,4 @@ NuGet Package : https://nuget.org/packages/NLog.Interface
 
 ## License
 
-WcfClientBase is licensed under [MIT License](http://opensource.org/licenses/MIT "Read more about the MIT license form"). Refer to license.txt for more information.
+NLog.Interface is licensed under [MIT License](http://opensource.org/licenses/MIT "Read more about the MIT license form"). Refer to license.txt for more information.
