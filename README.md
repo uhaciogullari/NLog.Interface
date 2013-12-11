@@ -3,7 +3,10 @@ NLog.Interface
 
 Defines an abstraction for NLog.Logger public interface
 
+    ILogger logger = new Logger(NLog.LogManager.GetCurrentClassLogger());
+	logger.Info("Hello World!");
+
 
 ## License
 
-NLog.Interface is licensed under [MIT License](http://opensource.org/licenses/MIT "Read more about the MIT license form"). Refer to license.txt for more information.
+NLog.Interface is licensed under [MIT License](http://opensource.org/licenses/MIT "Read more about the MIT license form"). Refer to license file for more information.
