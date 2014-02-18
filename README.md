@@ -3,7 +3,7 @@ NLog.Interface
 
 Defines an abstraction for NLog.Logger public interface that you can use in unit tests and dependency injection.
 
-    ILogger logger = new Logger(NLog.LogManager.GetCurrentClassLogger());
+    ILogger logger = new LoggerAdapter(NLog.LogManager.GetCurrentClassLogger());
 	logger.Info("Hello World!");
 
 
