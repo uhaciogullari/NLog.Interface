@@ -236,7 +236,7 @@ namespace NLog.Interface
         /// </summary>
         /// <param name="message">A <see langword="string" /> to be written.</param>
         /// <param name="exception">An exception to be logged.</param>
-        void TraceException([Localizable(false)] string message, Exception exception);
+        void Trace([Localizable(false)] string message, Exception exception);
 
         /// <summary>
         /// Writes the diagnostic message at the <c>Trace</c> level using the specified parameters and formatting them with the supplied format provider.
@@ -351,7 +351,7 @@ namespace NLog.Interface
         /// </summary>
         /// <param name="message">A <see langword="string" /> to be written.</param>
         /// <param name="exception">An exception to be logged.</param>
-        void DebugException([Localizable(false)] string message, Exception exception);
+        void Debug([Localizable(false)] string message, Exception exception);
 
         /// <summary>
         /// Writes the diagnostic message at the <c>Debug</c> level using the specified parameters and formatting them with the supplied format provider.
@@ -466,7 +466,7 @@ namespace NLog.Interface
         /// </summary>
         /// <param name="message">A <see langword="string" /> to be written.</param>
         /// <param name="exception">An exception to be logged.</param>
-        void InfoException([Localizable(false)] string message, Exception exception);
+        void Info([Localizable(false)] string message, Exception exception);
 
         /// <summary>
         /// Writes the diagnostic message at the <c>Info</c> level using the specified parameters and formatting them with the supplied format provider.
@@ -581,7 +581,7 @@ namespace NLog.Interface
         /// </summary>
         /// <param name="message">A <see langword="string" /> to be written.</param>
         /// <param name="exception">An exception to be logged.</param>
-        void WarnException([Localizable(false)] string message, Exception exception);
+        void Warn([Localizable(false)] string message, Exception exception);
 
         /// <summary>
         /// Writes the diagnostic message at the <c>Warn</c> level using the specified parameters and formatting them with the supplied format provider.
@@ -696,7 +696,7 @@ namespace NLog.Interface
         /// </summary>
         /// <param name="message">A <see langword="string" /> to be written.</param>
         /// <param name="exception">An exception to be logged.</param>
-        void ErrorException([Localizable(false)] string message, Exception exception);
+        void Error([Localizable(false)] string message, Exception exception);
 
         /// <summary>
         /// Writes the diagnostic message at the <c>Error</c> level using the specified parameters and formatting them with the supplied format provider.
@@ -811,7 +811,7 @@ namespace NLog.Interface
         /// </summary>
         /// <param name="message">A <see langword="string" /> to be written.</param>
         /// <param name="exception">An exception to be logged.</param>
-        void FatalException([Localizable(false)] string message, Exception exception);
+        void Fatal([Localizable(false)] string message, Exception exception);
 
         /// <summary>
         /// Writes the diagnostic message at the <c>Fatal</c> level using the specified parameters and formatting them with the supplied format provider.
