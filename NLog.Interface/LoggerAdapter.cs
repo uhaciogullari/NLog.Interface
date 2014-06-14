@@ -139,9 +139,9 @@ namespace NLog.Interface
             _logger.Trace(messageFunc);
         }
 
-        public void TraceException(string message, Exception exception)
+        public void Trace(string message, Exception exception)
         {
-            _logger.TraceException(message, exception);
+            _logger.Trace(message, exception);
         }
 
         public void Trace(IFormatProvider formatProvider, string message, params object[] args)
@@ -204,9 +204,9 @@ namespace NLog.Interface
             _logger.Debug(messageFunc);
         }
 
-        public void DebugException(string message, Exception exception)
+        public void Debug(string message, Exception exception)
         {
-            _logger.DebugException(message, exception);
+            _logger.Debug(message, exception);
         }
 
         public void Debug(IFormatProvider formatProvider, string message, params object[] args)
@@ -269,9 +269,9 @@ namespace NLog.Interface
             _logger.Info(messageFunc);
         }
 
-        public void InfoException(string message, Exception exception)
+        public void Info(string message, Exception exception)
         {
-            _logger.InfoException(message, exception);
+            _logger.Info(message, exception);
         }
 
         public void Info(IFormatProvider formatProvider, string message, params object[] args)
@@ -334,9 +334,9 @@ namespace NLog.Interface
             _logger.Warn(messageFunc);
         }
 
-        public void WarnException(string message, Exception exception)
+        public void Warn(string message, Exception exception)
         {
-            _logger.WarnException(message, exception);
+            _logger.Warn(message, exception);
         }
 
         public void Warn(IFormatProvider formatProvider, string message, params object[] args)
@@ -399,9 +399,9 @@ namespace NLog.Interface
             _logger.Error(messageFunc);
         }
 
-        public void ErrorException(string message, Exception exception)
+        public void Error(string message, Exception exception)
         {
-            _logger.ErrorException(message, exception);
+            _logger.Error(message, exception);
         }
 
         public void Error(IFormatProvider formatProvider, string message, params object[] args)
@@ -464,9 +464,9 @@ namespace NLog.Interface
             _logger.Fatal(messageFunc);
         }
 
-        public void FatalException(string message, Exception exception)
+        public void Fatal(string message, Exception exception)
         {
-            _logger.FatalException(message, exception);
+            _logger.Fatal(message, exception);
         }
 
         public void Fatal(IFormatProvider formatProvider, string message, params object[] args)
