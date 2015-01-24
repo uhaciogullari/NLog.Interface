@@ -74,6 +74,7 @@ namespace NLog.Interface
             _logger.Log(level, messageFunc);
         }
 
+        [Obsolete("Use Log(LogLevel, String, Exception) method instead.")]
         public void LogException(LogLevel level, string message, Exception exception)
         {
             _logger.LogException(level, message, exception);
