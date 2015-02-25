@@ -125,6 +125,11 @@ namespace NLog.Interface
             _logger.Log(level, message, argument1, argument2, argument3);
         }
 
+		public void TraceException(string message, Exception exception)
+		{
+			_logger.TraceException(message, exception);
+		}
+
         public void Trace<T>(T value)
         {
             _logger.Trace(value);
@@ -189,6 +194,11 @@ namespace NLog.Interface
         {
             _logger.Trace(message, argument1, argument2, argument3);
         }
+
+		public void DebugException(string message, Exception exception)
+		{
+			_logger.DebugException(message, exception);
+		}
 
         public void Debug<T>(T value)
         {
@@ -255,6 +265,11 @@ namespace NLog.Interface
             _logger.Debug(message, argument1, argument2, argument3);
         }
 
+		public void InfoException(string message, Exception exception)
+		{
+			_logger.InfoException(message, exception);
+		}
+
         public void Info<T>(T value)
         {
             _logger.Info(value);
@@ -319,6 +334,11 @@ namespace NLog.Interface
         {
             _logger.Info(message, argument1, argument2, argument3);
         }
+
+		public void WarnException(string message, Exception exception)
+		{
+			_logger.WarnException(message, exception);
+		}
 
         public void Warn<T>(T value)
         {
@@ -385,6 +405,11 @@ namespace NLog.Interface
             _logger.Warn(message, argument1, argument2, argument3);
         }
 
+		public void ErrorException(string message, Exception exception)
+		{
+			_logger.ErrorException(message, exception);
+		}
+
         public void Error<T>(T value)
         {
             _logger.Error(value);
@@ -449,6 +474,11 @@ namespace NLog.Interface
         {
             _logger.Error(message, argument1, argument2, argument3);
         }
+
+		public void FatalException(string message, Exception exception)
+		{
+			_logger.FatalException(message, exception);
+		}
 
         public void Fatal<T>(T value)
         {

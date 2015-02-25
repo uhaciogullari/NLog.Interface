@@ -207,6 +207,12 @@ namespace NLog.Interface
         /// <param name="argument3">The third argument to format.</param>
         void Log<TArgument1, TArgument2, TArgument3>(LogLevel level, [Localizable(false)] string message, TArgument1 argument1, TArgument2 argument2, TArgument3 argument3);
 
+		/// <summary>
+		/// Writes the diagnostic message and exception at the <c>Trace</c> level.
+		/// </summary>
+		/// <param name="message">A <see langword="string"/> to be written.</param><param name="exception">An exception to be logged.</param>
+		void TraceException([Localizable(false)] string message, Exception exception);
+
         /// <overloads>
         /// Writes the diagnostic message at the <c>Trace</c> level using the specified format provider and format parameters.
         /// </overloads>
@@ -321,6 +327,12 @@ namespace NLog.Interface
         /// <param name="argument2">The second argument to format.</param>
         /// <param name="argument3">The third argument to format.</param>
         void Trace<TArgument1, TArgument2, TArgument3>([Localizable(false)] string message, TArgument1 argument1, TArgument2 argument2, TArgument3 argument3);
+
+		/// <summary>
+		/// Writes the diagnostic message and exception at the <c>Debug</c> level.
+		/// </summary>
+		/// <param name="message">A <see langword="string"/> to be written.</param><param name="exception">An exception to be logged.</param>
+		void DebugException([Localizable(false)] string message, Exception exception);
 
         /// <overloads>
         /// Writes the diagnostic message at the <c>Debug</c> level using the specified format provider and format parameters.
@@ -437,6 +449,12 @@ namespace NLog.Interface
         /// <param name="argument3">The third argument to format.</param>
         void Debug<TArgument1, TArgument2, TArgument3>([Localizable(false)] string message, TArgument1 argument1, TArgument2 argument2, TArgument3 argument3);
 
+		/// <summary>
+		/// Writes the diagnostic message and exception at the <c>Info</c> level.
+		/// </summary>
+		/// <param name="message">A <see langword="string"/> to be written.</param><param name="exception">An exception to be logged.</param>
+		void InfoException([Localizable(false)] string message, Exception exception);
+
         /// <overloads>
         /// Writes the diagnostic message at the <c>Info</c> level using the specified format provider and format parameters.
         /// </overloads>
@@ -551,6 +569,12 @@ namespace NLog.Interface
         /// <param name="argument2">The second argument to format.</param>
         /// <param name="argument3">The third argument to format.</param>
         void Info<TArgument1, TArgument2, TArgument3>([Localizable(false)] string message, TArgument1 argument1, TArgument2 argument2, TArgument3 argument3);
+		
+		/// <summary>
+		/// Writes the diagnostic message and exception at the <c>Warn</c> level.
+		/// </summary>
+		/// <param name="message">A <see langword="string"/> to be written.</param><param name="exception">An exception to be logged.</param>
+		void WarnException([Localizable(false)] string message, Exception exception);
 
         /// <overloads>
         /// Writes the diagnostic message at the <c>Warn</c> level using the specified format provider and format parameters.
@@ -667,6 +691,12 @@ namespace NLog.Interface
         /// <param name="argument3">The third argument to format.</param>
         void Warn<TArgument1, TArgument2, TArgument3>([Localizable(false)] string message, TArgument1 argument1, TArgument2 argument2, TArgument3 argument3);
 
+		/// <summary>
+		/// Writes the diagnostic message and exception at the <c>Error</c> level.
+		/// </summary>
+		/// <param name="message">A <see langword="string"/> to be written.</param><param name="exception">An exception to be logged.</param>
+		void ErrorException([Localizable(false)] string message, Exception exception);
+
         /// <overloads>
         /// Writes the diagnostic message at the <c>Error</c> level using the specified format provider and format parameters.
         /// </overloads>
@@ -781,6 +811,12 @@ namespace NLog.Interface
         /// <param name="argument2">The second argument to format.</param>
         /// <param name="argument3">The third argument to format.</param>
         void Error<TArgument1, TArgument2, TArgument3>([Localizable(false)] string message, TArgument1 argument1, TArgument2 argument2, TArgument3 argument3);
+
+		/// <summary>
+		/// Writes the diagnostic message and exception at the <c>Fatal</c> level.
+		/// </summary>
+		/// <param name="message">A <see langword="string"/> to be written.</param><param name="exception">An exception to be logged.</param>
+		void FatalException([Localizable(false)] string message, Exception exception);
 
         /// <overloads>
         /// Writes the diagnostic message at the <c>Fatal</c> level using the specified format provider and format parameters.
