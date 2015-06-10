@@ -125,6 +125,7 @@ namespace NLog.Interface
             _logger.Log(level, message, argument1, argument2, argument3);
         }
 
+        [Obsolete(@"Use Trace(Exception exception, string message, params object[] args) method instead.")]
 		public void TraceException(string message, Exception exception)
 		{
 			_logger.TraceException(message, exception);
@@ -145,6 +146,12 @@ namespace NLog.Interface
             _logger.Trace(messageFunc);
         }
 
+        public void Trace(Exception exception, string message, params object[] args)
+        {
+            _logger.Trace(exception, message, args);
+        }
+
+        [Obsolete(@"Use Trace(Exception exception, string message, params object[] args) method instead.")]
         public void Trace(string message, Exception exception)
         {
             _logger.Trace(message, exception);
@@ -195,6 +202,7 @@ namespace NLog.Interface
             _logger.Trace(message, argument1, argument2, argument3);
         }
 
+        [Obsolete(@"Use Debug(Exception exception, string message, params object[] args) method instead.")]
 		public void DebugException(string message, Exception exception)
 		{
 			_logger.DebugException(message, exception);
@@ -215,6 +223,12 @@ namespace NLog.Interface
             _logger.Debug(messageFunc);
         }
 
+        public void Debug(Exception exception, string message, params object[] args)
+        {
+            _logger.Debug(exception, message, args);
+        }
+        
+        [Obsolete(@"Use Debug(Exception exception, string message, params object[] args) method instead.")]
         public void Debug(string message, Exception exception)
         {
             _logger.Debug(message, exception);
@@ -265,6 +279,7 @@ namespace NLog.Interface
             _logger.Debug(message, argument1, argument2, argument3);
         }
 
+        [Obsolete(@"Use Info(Exception exception, string message, params object[] args) method instead.")]
 		public void InfoException(string message, Exception exception)
 		{
 			_logger.InfoException(message, exception);
@@ -285,6 +300,12 @@ namespace NLog.Interface
             _logger.Info(messageFunc);
         }
 
+        public void Info(Exception exception, string message, params object[] args)
+        {
+            _logger.Info(exception, message, args);
+        }
+
+        [Obsolete(@"Use Info(LogLevel level, Exception exception, string message, params object[] args) method instead.")]
         public void Info(string message, Exception exception)
         {
             _logger.Info(message, exception);
@@ -335,6 +356,7 @@ namespace NLog.Interface
             _logger.Info(message, argument1, argument2, argument3);
         }
 
+        [Obsolete(@"Use Warn(Exception exception, string message, params object[] args) method instead.")]
 		public void WarnException(string message, Exception exception)
 		{
 			_logger.WarnException(message, exception);
@@ -355,6 +377,12 @@ namespace NLog.Interface
             _logger.Warn(messageFunc);
         }
 
+        public void Warn(Exception exception, string message, params object[] args)
+        {
+            _logger.Warn(exception, message, args);
+        }
+
+        [Obsolete(@"Use Warn(LogLevel level, Exception exception, string message, params object[] args) method instead.")]
         public void Warn(string message, Exception exception)
         {
             _logger.Warn(message, exception);
@@ -405,10 +433,16 @@ namespace NLog.Interface
             _logger.Warn(message, argument1, argument2, argument3);
         }
 
+        [Obsolete(@"Use Error(Exception exception, string message, params object[] args) method instead.")]
 		public void ErrorException(string message, Exception exception)
 		{
 			_logger.ErrorException(message, exception);
 		}
+
+        public void Error(Exception exception, string message, params object[] args)
+        {
+            _logger.Error(exception, message, args);
+        }
 
         public void Error<T>(T value)
         {
@@ -425,6 +459,7 @@ namespace NLog.Interface
             _logger.Error(messageFunc);
         }
 
+        [Obsolete(@"Use Error(Exception exception, string message, params object[] args) method instead.")]
         public void Error(string message, Exception exception)
         {
             _logger.Error(message, exception);
@@ -475,6 +510,7 @@ namespace NLog.Interface
             _logger.Error(message, argument1, argument2, argument3);
         }
 
+        [Obsolete(@"Use Fatal(Exception exception, string message, params object[] args) method instead.")]
 		public void FatalException(string message, Exception exception)
 		{
 			_logger.FatalException(message, exception);
@@ -495,6 +531,12 @@ namespace NLog.Interface
             _logger.Fatal(messageFunc);
         }
 
+        public void Fatal(Exception exception, string message, params object[] args)
+        {
+            _logger.Fatal(exception, message, args);
+        }
+
+        [Obsolete(@"Use Fatal(Exception exception, string message, params object[] args) method instead.")]
         public void Fatal(string message, Exception exception)
         {
             _logger.Fatal(message, exception);
