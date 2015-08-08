@@ -6,8 +6,7 @@ Defines an abstraction for NLog.Logger public interface that you can use in unit
     ILogger logger = new LoggerAdapter(NLog.LogManager.GetCurrentClassLogger());
 	logger.Info("Hello World!");
 
-### There is an ILogger interface in NLog library by v4.0. You don't need this library anymore. No idea what it took them this long :confused:
-
+### There is an ILogger interface in NLog library by v4.0. You don't need this library anymore.
 
 
 ## License
