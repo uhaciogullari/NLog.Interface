@@ -42,7 +42,7 @@ namespace NLog.Interface
 
         public bool IsErrorEnabled { get { return _logger.IsErrorEnabled; } }
 
-        public bool IsFatalEnabled { get { return _logger.IsErrorEnabled; } }
+        public bool IsFatalEnabled { get { return _logger.IsFatalEnabled; } }
 
         public bool IsEnabled(LogLevel level)
         {
